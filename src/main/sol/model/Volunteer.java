@@ -42,4 +42,14 @@ private String emailAddress;
   public void setEmailAddress(String emailAddress) {
     this.emailAddress = emailAddress;
   }
+
+  @Override
+  public String toString() {
+    return "Volunteer{" +
+        "id=" + id +
+        ", name='" + name + '\'' +
+        ", contactNumber='" + contactNumber + '\'' +
+        ", emailAddress='" + emailAddress + '\'' +
+        '}';
+  }
 }

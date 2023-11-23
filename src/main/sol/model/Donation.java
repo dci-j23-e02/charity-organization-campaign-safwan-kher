@@ -7,10 +7,10 @@ public class Donation {
 private int id;
 private int donorId;
 private double amount;
-private Date date;
+private String date;
 private String projectName;
 
-  public Donation(int donorId, double amount, Date date, String projectName) {
+  public Donation(int donorId, double amount, String date, String projectName) {
     this.id = IDGenerator.getNextIdCounter();
     this.donorId = donorId;
     this.amount = amount;
@@ -38,11 +38,11 @@ private String projectName;
     this.amount = amount;
   }
 
-  public Date getDate() {
+  public String getDate() {
     return date;
   }
 
-  public void setDate(Date date) {
+  public void setDate(String date) {
     this.date = date;
   }
 
@@ -52,5 +52,16 @@ private String projectName;
 
   public void setProjectName(String projectName) {
     this.projectName = projectName;
+  }
+
+  @Override
+  public String toString() {
+    return "Donation{" +
+        "id=" + id +
+        ", donorId=" + donorId +
+        ", amount=" + amount +
+        ", date='" + date + '\'' +
+        ", projectName='" + projectName + '\'' +
+        '}';
   }
 }
