@@ -1,7 +1,7 @@
 package sol.model;
 
 import sol.util.IDGenerator;
-import java.util.Date;
+
 
 public class Donation {
 private int id;
